@@ -1,0 +1,35 @@
+{
+    "name": "nwidart/chat",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Chat\\": "",
+            "Modules\\Chat\\Database\\Factories\\": "Database/Factories/",
+            "Modules\\Chat\\Database\\Seeders\\": "Database/Seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Chat\\Tests\\": "Tests/"
+        }
+    },
+    "require": {
+        "musonza/chat": "^6.3"
+    }
+}
