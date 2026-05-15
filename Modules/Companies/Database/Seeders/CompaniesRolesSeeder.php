@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Lang;
 use Spatie\Permission\Models\Role;
-use App\Models\Permission;
+use Spatie\Permission\Models\Permission;
 use Exception;
 
 class CompaniesRolesSeeder extends Seeder

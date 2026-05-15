@@ -8,7 +8,7 @@ use Modules\Companies\Events\StoreEvents;
 use Modules\Companies\Http\Requests\CompanyRequest;
 use Modules\Companies\Models\Companies;
 
-class UserUpdate
+class UserDelete
 {
     /**
      * Handle the event.

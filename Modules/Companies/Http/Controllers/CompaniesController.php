@@ -8,7 +8,7 @@ use Modules\Companies\Http\Requests\CompanyRequest;
 use Modules\Companies\Models\Companies;
 use Modules\Teams\Models\Team;
 use Modules\Teams\Models\User;
-use App\Services\Users\UserService;
+use Modules\Crm\Services\UserService;
 use Illuminate\Support\Facades\Log;
 
 class CompaniesController extends OrionBaseController

@@ -3,7 +3,7 @@
 namespace Modules\Chat\Http\Requests;
 
 use Orion\Http\Requests\Request;
-use App\Rules\StorageFileExists;
+use Modules\Crm\Rules\StorageFileExists;
 
 class ChatRequest extends Request
 {

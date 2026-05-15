@@ -3,7 +3,7 @@
 namespace Modules\Companies\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Http\Controllers\Api\UserController;
+use Modules\Crm\Http\Controllers\Api\UserController;
 use Modules\Companies\Http\Controllers\Api\CompaniesController;
 use App\Models\User;
 use Modules\Teams\Support\Pivot\TeamUser;

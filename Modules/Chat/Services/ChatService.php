@@ -7,7 +7,7 @@ use Modules\Chat\Models\Conversation;
 use Musonza\Chat\Facades\ChatFacade as Chat;
 use Illuminate\Support\Facades\Log;
 use Modules\Chat\Events\ChatMessageNotification;
-use App\Services\MediaLibraryService;
+use Modules\Media\Services\MediaLibraryService;
 use Modules\Chat\Events\MessageSent;
 
 

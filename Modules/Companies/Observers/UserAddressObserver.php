@@ -3,9 +3,9 @@
 namespace Modules\Companies\Observers;
 
 use App\Models\User;
-use App\Helpers\Validation;
 Use Modules\Companies\Models\Addresses;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Validator;
 
 
 class UserAddressObserver
@@ -25,14 +25,18 @@ class UserAddressObserver
         $req = request();
      
 
-        if(Validation::make($req->all(),[
+        $validator = Validator::make($req->all(), [
             "address" => "sometimes|nullable|array",
             "address.street" => "sometimes|nullable",
             "address.city" => "sometimes|nullable",
             "address.state" => "sometimes|nullable",
             "address.post_code" => "sometimes|nullable",
            // "address.country_id " => "sometimes|nullable|int",
-        ])){ return false; }
+        ]);
+
+        if ($validator->fails()) {
+            return false;
+        }
 
 
 

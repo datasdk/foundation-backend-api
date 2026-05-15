@@ -8,7 +8,6 @@
         "Modules\\Companies\\Providers\\CompaniesServiceProvider"
     ],
     "aliases": {},
-    "files": ["vendor/autoload.php"],
     "requires": [
     ]
     

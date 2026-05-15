@@ -3,7 +3,7 @@
 namespace Modules\Companies\Http\Livewire;
 
 use Livewire\Component;
-use App\Services\Users\UserService;
+use Modules\Crm\Services\UserService;
 use Modules\Companies\Models\User;
 use Modules\Companies\Models\Companies;
 use Role;

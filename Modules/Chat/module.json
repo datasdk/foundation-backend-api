@@ -6,7 +6,6 @@
     "priority": 0,
     "providers": [
         "Modules\\Chat\\Providers\\ChatServiceProvider"
-    ],
-    "files": ["vendor/autoload.php"]
+    ]
     
 }
