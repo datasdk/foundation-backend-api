@@ -16,7 +16,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-/Modules
+/Modules/*
 /public/modules
 /package-manager
 /frontend_angular
