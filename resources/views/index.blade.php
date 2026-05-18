@@ -23,7 +23,7 @@ $logoData = file_exists($logoPath) ? base64_encode(file_get_contents($logoPath))
             --violet: #9b8cff;
         }
 
-```
+
     * {
         box-sizing: border-box;
     }
@@ -289,7 +289,7 @@ $logoData = file_exists($logoPath) ? base64_encode(file_get_contents($logoPath))
         }
     }
 </style>
-```
+
 
 </head>
 <body>
@@ -304,7 +304,7 @@ $logoData = file_exists($logoPath) ? base64_encode(file_get_contents($logoPath))
             <a href="https://datas.dk/developer">datas.dk/developer</a>
         </nav>
 
-```
+
     <main>
         <section aria-labelledby="page-title">
             <div class="eyebrow"><span class="pulse"></span>Developer-first CMS platform</div>
@@ -337,7 +337,7 @@ $logoData = file_exists($logoPath) ? base64_encode(file_get_contents($logoPath))
         Datas CMS · Documentation for builders
     </footer>
 </div>
-```
+
 
 </body>
 </html>
