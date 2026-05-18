@@ -56,14 +56,29 @@ The installer will ask for:
 - Email
 - Password
 
-It will then:
+It will then automatically:
 
+- Generate the Laravel application key
 - Run fresh database migrations
 - Seed the database
 - Create the storage link
 - Create the first admin user
 
-When the installation is complete, the project is ready for development and configuration.
+---
+
+## Start Development Server
+
+Start the Laravel development server:
+
+```bash
+php artisan serve
+```
+
+The application will typically be available at:
+
+```txt
+http://127.0.0.1:8000
+```
 
 ---
 
