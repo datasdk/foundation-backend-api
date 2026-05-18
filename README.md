@@ -15,13 +15,13 @@ Installer PHP dependencies:
 composer install
 ```
 
-Kør derefter Datas installationen:
+Run the Datas installation:
 
 ```bash
 php artisan datas:install
 ```
 
-Når installationen er færdig, er projektet klar til konfiguration og brug.
+When the installation is complete, the project is ready for configuration and use.
 
 # Datas Module
 
