@@ -39,12 +39,6 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-Generate the application key:
-
-```bash
-php artisan key:generate
-```
-
 ---
 
 ## Datas Installation
@@ -54,6 +48,20 @@ Run the Datas installer:
 ```bash
 php artisan datas:install
 ```
+
+The installer will ask for:
+
+- First name
+- Last name
+- Email
+- Password
+
+It will then:
+
+- Run fresh database migrations
+- Seed the database
+- Create the storage link
+- Create the first admin user
 
 When the installation is complete, the project is ready for development and configuration.
 
