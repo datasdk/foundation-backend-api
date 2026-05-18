@@ -182,7 +182,6 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         Laraeast\LaravelSettings\Providers\SettingsServiceProvider::class,
-        Webwizo\Shortcodes\ShortcodesServiceProvider::class,
         App\Providers\LogServiceProvider::class,
 
        // App\Providers\JetstreamServiceProvider::class,

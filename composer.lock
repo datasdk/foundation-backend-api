@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c32feac4ca0a96512f4bbfeaf4216a5c",
+    "content-hash": "cb13e873b57433e7d885e0a944283e7c",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -1702,148 +1702,46 @@
             "time": "2025-08-22T14:27:06+00:00"
         },
         {
-            "name": "intervention/gif",
-            "version": "4.2.4",
+            "name": "joshbrw/laravel-module-installer",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Intervention/gif.git",
-                "reference": "c3598a16ebe7690cd55640c44144a9df383ea73c"
+                "url": "https://github.com/joshbrw/laravel-module-installer.git",
+                "reference": "667820efd0652df8ed61420cd0dec8df1b3ecdd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Intervention/gif/zipball/c3598a16ebe7690cd55640c44144a9df383ea73c",
-                "reference": "c3598a16ebe7690cd55640c44144a9df383ea73c",
+                "url": "https://api.github.com/repos/joshbrw/laravel-module-installer/zipball/667820efd0652df8ed61420cd0dec8df1b3ecdd2",
+                "reference": "667820efd0652df8ed61420cd0dec8df1b3ecdd2",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1"
+                "composer-plugin-api": "^2.0",
+                "php": "7.* || 8.*"
             },
             "require-dev": {
-                "phpstan/phpstan": "^2.1",
-                "phpunit/phpunit": "^10.0 || ^11.0  || ^12.0",
-                "slevomat/coding-standard": "~8.0",
-                "squizlabs/php_codesniffer": "^3.8"
+                "composer/composer": "^2.0",
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~8.0 || ~9.0"
             },
-            "type": "library",
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Joshbrw\\LaravelModuleInstaller\\LaravelModuleInstallerPlugin"
+            },
             "autoload": {
                 "psr-4": {
-                    "Intervention\\Gif\\": "src"
+                    "Joshbrw\\LaravelModuleInstaller\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Oliver Vogel",
-                    "email": "oliver@intervention.io",
-                    "homepage": "https://intervention.io/"
-                }
-            ],
-            "description": "Native PHP GIF Encoder/Decoder",
-            "homepage": "https://github.com/intervention/gif",
-            "keywords": [
-                "animation",
-                "gd",
-                "gif",
-                "image"
-            ],
             "support": {
-                "issues": "https://github.com/Intervention/gif/issues",
-                "source": "https://github.com/Intervention/gif/tree/4.2.4"
+                "issues": "https://github.com/joshbrw/laravel-module-installer/issues",
+                "source": "https://github.com/joshbrw/laravel-module-installer/tree/v2.0.1"
             },
-            "funding": [
-                {
-                    "url": "https://paypal.me/interventionio",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/Intervention",
-                    "type": "github"
-                },
-                {
-                    "url": "https://ko-fi.com/interventionphp",
-                    "type": "ko_fi"
-                }
-            ],
-            "time": "2026-01-04T09:27:23+00:00"
-        },
-        {
-            "name": "intervention/image",
-            "version": "3.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Intervention/image.git",
-                "reference": "6b9ce4fc4485d30117e13935b25bc55a8b894a79"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Intervention/image/zipball/6b9ce4fc4485d30117e13935b25bc55a8b894a79",
-                "reference": "6b9ce4fc4485d30117e13935b25bc55a8b894a79",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "intervention/gif": "^4.2",
-                "php": "^8.1"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.6",
-                "phpstan/phpstan": "^2.1",
-                "phpunit/phpunit": "^10.0 || ^11.0",
-                "slevomat/coding-standard": "~8.0",
-                "squizlabs/php_codesniffer": "^3.8"
-            },
-            "suggest": {
-                "ext-exif": "Recommended to be able to read EXIF data properly."
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Intervention\\Image\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Oliver Vogel",
-                    "email": "oliver@intervention.io",
-                    "homepage": "https://intervention.io/"
-                }
-            ],
-            "description": "PHP image manipulation",
-            "homepage": "https://image.intervention.io/",
-            "keywords": [
-                "gd",
-                "image",
-                "imagick",
-                "resize",
-                "thumbnail",
-                "watermark"
-            ],
-            "support": {
-                "issues": "https://github.com/Intervention/image/issues",
-                "source": "https://github.com/Intervention/image/tree/3.11.0"
-            },
-            "funding": [
-                {
-                    "url": "https://paypal.me/interventionio",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/Intervention",
-                    "type": "github"
-                },
-                {
-                    "url": "https://ko-fi.com/interventionphp",
-                    "type": "ko_fi"
-                }
-            ],
-            "time": "2025-01-18T15:42:14+00:00"
+            "time": "2021-01-17T21:51:00+00:00"
         },
         {
             "name": "kalnoy/nestedset",
@@ -2174,62 +2072,6 @@
             "time": "2026-02-15T14:12:07+00:00"
         },
         {
-            "name": "laravel/legacy-factories",
-            "version": "v1.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/legacy-factories.git",
-                "reference": "fdaadc5c7cc656503704ad87a6d5fad961cc5c8a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/legacy-factories/zipball/fdaadc5c7cc656503704ad87a6d5fad961cc5c8a",
-                "reference": "fdaadc5c7cc656503704ad87a6d5fad961cc5c8a",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/macroable": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
-                "php": "^7.3|^8.0",
-                "symfony/finder": "^3.4|^4.0|^5.0|^6.0|^7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Illuminate\\Database\\Eloquent\\LegacyFactoryServiceProvider"
-                    ]
-                },
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "helpers.php"
-                ],
-                "psr-4": {
-                    "Illuminate\\Database\\Eloquent\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The legacy version of the Laravel Eloquent factories.",
-            "homepage": "http://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "time": "2026-02-21T13:29:40+00:00"
-        },
-        {
             "name": "laravel/prompts",
             "version": "v0.1.25",
             "source": {
@@ -2413,91 +2255,6 @@
                 "source": "https://github.com/laravel/serializable-closure"
             },
             "time": "2024-11-14T18:34:49+00:00"
-        },
-        {
-            "name": "laravelcm/laravel-subscriptions",
-            "version": "v1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravelcm/laravel-subscriptions.git",
-                "reference": "68bf992aff33633659aa34ef85d705ba3c074e68"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravelcm/laravel-subscriptions/zipball/68bf992aff33633659aa34ef85d705ba3c074e68",
-                "reference": "68bf992aff33633659aa34ef85d705ba3c074e68",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/console": "^10.0|^11.0|^12.0|^13.0",
-                "illuminate/container": "^10.0|^11.0|^12.0|^13.0",
-                "illuminate/database": "^10.0|^11.0|^12.0|^13.0",
-                "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
-                "php": "^8.2",
-                "spatie/eloquent-sortable": "^4.0.0|^5.0",
-                "spatie/laravel-package-tools": "^1.16",
-                "spatie/laravel-sluggable": "^3.4.2",
-                "spatie/laravel-translatable": "^6.5.0"
-            },
-            "require-dev": {
-                "larastan/larastan": "^2.0|^3.0",
-                "laravel/pint": "^1.13",
-                "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
-                "pestphp/pest": "^2.18|^3.7",
-                "spatie/test-time": "^1.3"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Laravelcm\\Subscriptions\\SubscriptionServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravelcm\\Subscriptions\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Arthur Monney",
-                    "email": "arthur@laravel.cm",
-                    "homepage": "https://arthurmonney.me"
-                },
-                {
-                    "name": "The Generous Laravel Community",
-                    "homepage": "https://github.com/laravelcm/laravel-subscriptions/contributors"
-                }
-            ],
-            "description": "Laravel Subscriptions is a flexible plans and subscription management system for Laravel, with the required tools to run your SAAS like services efficiently. It's simple architecture, accompanied by powerful underlying to afford solid platform for your business.",
-            "homepage": "https://laravel.cm",
-            "keywords": [
-                "database",
-                "feature",
-                "laravel",
-                "plan",
-                "recurring",
-                "subscription",
-                "value"
-            ],
-            "support": {
-                "docs": "https://github.com/laravelcm/laravel-subscriptions/blob/main/README.md",
-                "email": "support@laravel.cm",
-                "issues": "https://github.com/laravelcm/laravel-subscriptions/issues",
-                "source": "https://github.com/laravelcm/laravel-subscriptions"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/mckenziearts",
-                    "type": "github"
-                }
-            ],
-            "time": "2026-04-16T18:28:47+00:00"
         },
         {
             "name": "league/commonmark",
@@ -2690,16 +2447,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.33.0",
+            "version": "3.34.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "570b8871e0ce693764434b29154c54b434905350"
+                "reference": "2daaac3b0d4c83ea7ed5d8586e786f5d00f3540e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/570b8871e0ce693764434b29154c54b434905350",
-                "reference": "570b8871e0ce693764434b29154c54b434905350",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/2daaac3b0d4c83ea7ed5d8586e786f5d00f3540e",
+                "reference": "2daaac3b0d4c83ea7ed5d8586e786f5d00f3540e",
                 "shasum": ""
             },
             "require": {
@@ -2767,9 +2524,9 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.33.0"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.34.0"
             },
-            "time": "2026-03-25T07:59:30+00:00"
+            "time": "2026-05-14T10:28:08+00:00"
         },
         {
             "name": "league/flysystem-local",
@@ -2819,76 +2576,6 @@
                 "source": "https://github.com/thephpleague/flysystem-local/tree/3.31.0"
             },
             "time": "2026-01-23T15:30:45+00:00"
-        },
-        {
-            "name": "league/fractal",
-            "version": "0.20.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/fractal.git",
-                "reference": "573ca2e0e348a7fe573a3e8fbc29a6588ece8c4e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/fractal/zipball/573ca2e0e348a7fe573a3e8fbc29a6588ece8c4e",
-                "reference": "573ca2e0e348a7fe573a3e8fbc29a6588ece8c4e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.4"
-            },
-            "require-dev": {
-                "doctrine/orm": "^2.5",
-                "illuminate/contracts": "~5.0",
-                "laminas/laminas-paginator": "~2.12",
-                "mockery/mockery": "^1.3",
-                "pagerfanta/pagerfanta": "~1.0.0|~4.0.0",
-                "phpstan/phpstan": "^1.4",
-                "phpunit/phpunit": "^9.5",
-                "squizlabs/php_codesniffer": "~3.4",
-                "vimeo/psalm": "^4.30"
-            },
-            "suggest": {
-                "illuminate/pagination": "The Illuminate Pagination component.",
-                "laminas/laminas-paginator": "Laminas Framework Paginator",
-                "pagerfanta/pagerfanta": "Pagerfanta Paginator"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.20.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\Fractal\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Phil Sturgeon",
-                    "email": "me@philsturgeon.uk",
-                    "homepage": "http://philsturgeon.uk/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Handle the output of complex data structures ready for API output.",
-            "homepage": "http://fractal.thephpleague.com/",
-            "keywords": [
-                "api",
-                "json",
-                "league",
-                "rest"
-            ],
-            "support": {
-                "issues": "https://github.com/thephpleague/fractal/issues",
-                "source": "https://github.com/thephpleague/fractal/tree/0.20.2"
-            },
-            "time": "2025-02-14T21:33:14+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -2945,155 +2632,6 @@
                 }
             ],
             "time": "2024-09-21T08:32:55+00:00"
-        },
-        {
-            "name": "lecturize/laravel-addresses",
-            "version": "v1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Lecturize/Laravel-Addresses.git",
-                "reference": "6c455347fe53052dc025b8a3a89efd52812c02f9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Lecturize/Laravel-Addresses/zipball/6c455347fe53052dc025b8a3a89efd52812c02f9",
-                "reference": "6c455347fe53052dc025b8a3a89efd52812c02f9",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/database": "^9.0|^10.0",
-                "illuminate/support": "^9.0|^10.0",
-                "php": "^8.0",
-                "webpatser/laravel-countries": "^1.5",
-                "webpatser/laravel-uuid": "^3.0|^4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.4",
-                "orchestra/testbench": "^7.0|^8.0",
-                "phpunit/phpunit": "^8.0|^9.0|^10.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Address": "Lecturize\\Addresses\\Facades\\Address"
-                    },
-                    "providers": [
-                        "Lecturize\\Addresses\\AddressesServiceProvider"
-                    ]
-                },
-                "branch-alias": {
-                    "dev-master": "1.2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Lecturize\\Addresses\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alexander Manfred Poellmann",
-                    "homepage": "https://twitter.com/AMPoellmann",
-                    "role": "developer"
-                }
-            ],
-            "description": "Simple address and contact management for Laravel.",
-            "homepage": "https://github.com/Lecturize/Laravel-Addresses",
-            "keywords": [
-                "addresses",
-                "contacts",
-                "laravel",
-                "lecturize"
-            ],
-            "support": {
-                "issues": "https://github.com/Lecturize/Laravel-Addresses/issues",
-                "source": "https://github.com/Lecturize/Laravel-Addresses"
-            },
-            "time": "2023-09-21T15:43:24+00:00"
-        },
-        {
-            "name": "maennchen/zipstream-php",
-            "version": "3.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/maennchen/ZipStream-PHP.git",
-                "reference": "aeadcf5c412332eb426c0f9b4485f6accba2a99f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/aeadcf5c412332eb426c0f9b4485f6accba2a99f",
-                "reference": "aeadcf5c412332eb426c0f9b4485f6accba2a99f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "ext-zlib": "*",
-                "php-64bit": "^8.2"
-            },
-            "require-dev": {
-                "brianium/paratest": "^7.7",
-                "ext-zip": "*",
-                "friendsofphp/php-cs-fixer": "^3.16",
-                "guzzlehttp/guzzle": "^7.5",
-                "mikey179/vfsstream": "^1.6",
-                "php-coveralls/php-coveralls": "^2.5",
-                "phpunit/phpunit": "^11.0",
-                "vimeo/psalm": "^6.0"
-            },
-            "suggest": {
-                "guzzlehttp/psr7": "^2.4",
-                "psr/http-message": "^2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "ZipStream\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Paul Duncan",
-                    "email": "pabs@pablotron.org"
-                },
-                {
-                    "name": "Jonatan Männchen",
-                    "email": "jonatan@maennchen.ch"
-                },
-                {
-                    "name": "Jesse Donat",
-                    "email": "donatj@gmail.com"
-                },
-                {
-                    "name": "András Kolesár",
-                    "email": "kolesar@kolesar.hu"
-                }
-            ],
-            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
-            "keywords": [
-                "stream",
-                "zip"
-            ],
-            "support": {
-                "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
-                "source": "https://github.com/maennchen/ZipStream-PHP/tree/3.1.2"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/maennchen",
-                    "type": "github"
-                }
-            ],
-            "time": "2025-01-27T12:07:53+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -3266,148 +2804,6 @@
             "time": "2026-01-02T08:56:05+00:00"
         },
         {
-            "name": "multicaret/laravel-acquaintances",
-            "version": "v3.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/multicaret/laravel-acquaintances.git",
-                "reference": "3a778ca9f07a2702d38204a2d0f4a4c1a0980700"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/multicaret/laravel-acquaintances/zipball/3a778ca9f07a2702d38204a2d0f4a4c1a0980700",
-                "reference": "3a778ca9f07a2702d38204a2d0f4a4c1a0980700",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.0"
-            },
-            "require-dev": {
-                "codeclimate/php-test-reporter": "^0.3.2",
-                "doctrine/dbal": "^2.5",
-                "fzaninotto/faker": "~1.4",
-                "laravel/laravel": "5.*|^9.0|^10.0|^11.0",
-                "mockery/mockery": "1.0.x-dev",
-                "phpunit/phpunit": "5.*"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Multicaret\\Acquaintances\\AcquaintancesServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Multicaret\\Acquaintances\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mohamed Kawsara",
-                    "email": "mkwsra@gmail.com"
-                }
-            ],
-            "description": "This light package, with no dependencies, gives Eloquent models the ability to manage friendships (with groups). And interactions such as: Likes, favorites, votes, subscribe, follow, ..etc. And it includes advanced rating system.",
-            "keywords": [
-                "Followers",
-                "Rate",
-                "Rating",
-                "eloquent",
-                "followships",
-                "friend-system",
-                "friends",
-                "friendships",
-                "interactions",
-                "laravel",
-                "like",
-                "social-media",
-                "wish-list"
-            ],
-            "support": {
-                "issues": "https://github.com/multicaret/laravel-acquaintances/issues",
-                "source": "https://github.com/multicaret/laravel-acquaintances/tree/v3.7.0"
-            },
-            "time": "2025-02-17T16:03:24+00:00"
-        },
-        {
-            "name": "musonza/chat",
-            "version": "v6.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/musonza/chat.git",
-                "reference": "8f03df6143f88e5df0589d785521d0d9fd9b79c2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/musonza/chat/zipball/8f03df6143f88e5df0589d785521d0d9fd9b79c2",
-                "reference": "8f03df6143f88e5df0589d785521d0d9fd9b79c2",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^8.0|^9.0|^10.0|^11.0",
-                "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
-                "laravel/legacy-factories": "^1.0",
-                "php": ">=8.0",
-                "spatie/laravel-fractal": "^6.0|dev-main"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0.0",
-                "orchestra/testbench": "^7.0|^8.0|^9.0",
-                "phpunit/phpunit": "^8.0|^9.0|^10.5"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Chat": "Musonza\\Chat\\Facades\\ChatFacade"
-                    },
-                    "providers": [
-                        "Musonza\\Chat\\ChatServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Musonza\\Chat\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tinashe Musonza",
-                    "email": "tashtin263@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Chat Package for Laravel",
-            "keywords": [
-                "chat",
-                "conversation",
-                "laravel",
-                "messaging"
-            ],
-            "support": {
-                "issues": "https://github.com/musonza/chat/issues",
-                "source": "https://github.com/musonza/chat/tree/v6.3.0"
-            },
-            "funding": [
-                {
-                    "url": "https://www.paypal.me/tinashemusonza",
-                    "type": "custom"
-                }
-            ],
-            "time": "2024-03-10T00:37:58+00:00"
-        },
-        {
             "name": "nesbot/carbon",
             "version": "2.73.0",
             "source": {
@@ -3513,76 +2909,6 @@
                 }
             ],
             "time": "2025-01-08T20:10:23+00:00"
-        },
-        {
-            "name": "netsells/laravel-geoscope",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/netsells/laravel-geoscope.git",
-                "reference": "d86b1ba4d0b5fa9e0044fa73478ddd4bb742a550"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/netsells/laravel-geoscope/zipball/d86b1ba4d0b5fa9e0044fa73478ddd4bb742a550",
-                "reference": "d86b1ba4d0b5fa9e0044fa73478ddd4bb742a550",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": ">=5.3",
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "laravel/framework": "^6.6",
-                "mockery/mockery": "^1.3",
-                "orchestra/testbench": "^4.4",
-                "phpunit/phpunit": "^8.4"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Netsells\\GeoScope\\GeoScopeServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Netsells\\GeoScope\\": "src",
-                    "Netsells\\GeoScope\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adam Hutchison",
-                    "email": "adam.hutchison@netsells.co.uk"
-                }
-            ],
-            "description": "GeoScope is a laravel package that allows you to easily perform distance queries and geofencing based on latitudes and longitudes.",
-            "keywords": [
-                "coordinate",
-                "distance",
-                "earth",
-                "geo",
-                "geofence",
-                "gps",
-                "haversine",
-                "laravel",
-                "latitude",
-                "length",
-                "longitude",
-                "point"
-            ],
-            "support": {
-                "issues": "https://github.com/netsells/laravel-geoscope/issues",
-                "source": "https://github.com/netsells/laravel-geoscope/tree/2.0.2"
-            },
-            "abandoned": true,
-            "time": "2020-12-23T15:41:33+00:00"
         },
         {
             "name": "nette/schema",
@@ -4942,386 +4268,6 @@
             "time": "2026-02-21T21:26:43+00:00"
         },
         {
-            "name": "spatie/fractalistic",
-            "version": "2.11.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/fractalistic.git",
-                "reference": "85d6ff9a93f00d902e17924bb1475163b373c890"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/fractalistic/zipball/85d6ff9a93f00d902e17924bb1475163b373c890",
-                "reference": "85d6ff9a93f00d902e17924bb1475163b373c890",
-                "shasum": ""
-            },
-            "require": {
-                "league/fractal": "^0.20.1",
-                "php": "^7.4|^8.0"
-            },
-            "require-dev": {
-                "illuminate/pagination": "~5.3.0|~5.4.0|^9.0|^13.0",
-                "pestphp/pest": "^1.22",
-                "phpunit/phpunit": "^9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\Fractalistic\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A developer friendly wrapper around Fractal",
-            "homepage": "https://github.com/spatie/fractalistic",
-            "keywords": [
-                "api",
-                "fractal",
-                "fractalistic",
-                "spatie",
-                "transform"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/fractalistic/issues",
-                "source": "https://github.com/spatie/fractalistic/tree/2.11.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2026-02-21T21:10:25+00:00"
-        },
-        {
-            "name": "spatie/image",
-            "version": "3.9.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/image.git",
-                "reference": "6a322b5e9268e3903d4fb6e1ff08b7dcc3aa9429"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/image/zipball/6a322b5e9268e3903d4fb6e1ff08b7dcc3aa9429",
-                "reference": "6a322b5e9268e3903d4fb6e1ff08b7dcc3aa9429",
-                "shasum": ""
-            },
-            "require": {
-                "ext-exif": "*",
-                "ext-json": "*",
-                "ext-mbstring": "*",
-                "php": "^8.2",
-                "spatie/image-optimizer": "^1.7.5",
-                "spatie/temporary-directory": "^2.2",
-                "symfony/process": "^6.4|^7.0|^8.0"
-            },
-            "require-dev": {
-                "ext-gd": "*",
-                "ext-imagick": "*",
-                "laravel/sail": "^1.34",
-                "pestphp/pest": "^3.0|^4.0",
-                "phpstan/phpstan": "^1.10.50",
-                "spatie/pest-plugin-snapshots": "^2.1",
-                "spatie/pixelmatch-php": "^1.0",
-                "spatie/ray": "^1.40.1",
-                "symfony/var-dumper": "^6.4|^7.0|^8.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\Image\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Manipulate images with an expressive API",
-            "homepage": "https://github.com/spatie/image",
-            "keywords": [
-                "image",
-                "spatie"
-            ],
-            "support": {
-                "source": "https://github.com/spatie/image/tree/3.9.4"
-            },
-            "funding": [
-                {
-                    "url": "https://spatie.be/open-source/support-us",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2026-03-13T14:23:45+00:00"
-        },
-        {
-            "name": "spatie/image-optimizer",
-            "version": "1.8.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/image-optimizer.git",
-                "reference": "2ad9ac7c19501739183359ae64ea6c15869c23d9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/image-optimizer/zipball/2ad9ac7c19501739183359ae64ea6c15869c23d9",
-                "reference": "2ad9ac7c19501739183359ae64ea6c15869c23d9",
-                "shasum": ""
-            },
-            "require": {
-                "ext-fileinfo": "*",
-                "php": "^7.3|^8.0",
-                "psr/log": "^1.0 | ^2.0 | ^3.0",
-                "symfony/process": "^4.2|^5.0|^6.0|^7.0|^8.0"
-            },
-            "require-dev": {
-                "pestphp/pest": "^1.21|^2.0|^3.0|^4.0",
-                "phpunit/phpunit": "^8.5.21|^9.4.4|^10.0|^11.0|^12.0",
-                "symfony/var-dumper": "^4.2|^5.0|^6.0|^7.0|^8.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\ImageOptimizer\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Easily optimize images using PHP",
-            "homepage": "https://github.com/spatie/image-optimizer",
-            "keywords": [
-                "image-optimizer",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/image-optimizer/issues",
-                "source": "https://github.com/spatie/image-optimizer/tree/1.8.1"
-            },
-            "time": "2025-11-26T10:57:19+00:00"
-        },
-        {
-            "name": "spatie/laravel-fractal",
-            "version": "6.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/laravel-fractal.git",
-                "reference": "d34114259233540dcb405e45dff863164fb426c5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-fractal/zipball/d34114259233540dcb405e45dff863164fb426c5",
-                "reference": "d34114259233540dcb405e45dff863164fb426c5",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
-                "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
-                "league/fractal": "^0.20.1|^0.20",
-                "nesbot/carbon": "^2.63|^3.0",
-                "php": "^8.0",
-                "spatie/fractalistic": "^2.9.5|^2.9",
-                "spatie/laravel-package-tools": "^1.11"
-            },
-            "require-dev": {
-                "ext-json": "*",
-                "orchestra/testbench": "^7.0|^8.0|^9.2|^10.0|^11.0",
-                "pestphp/pest": "^1.22|^2.34|^3.0|^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Fractal": "Spatie\\Fractal\\Facades\\Fractal"
-                    },
-                    "providers": [
-                        "Spatie\\Fractal\\FractalServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "Spatie\\Fractal\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "An easy to use Fractal integration for Laravel applications",
-            "homepage": "https://github.com/spatie/laravel-fractal",
-            "keywords": [
-                "api",
-                "fractal",
-                "laravel",
-                "laravel-fractal",
-                "lumen",
-                "spatie",
-                "transform"
-            ],
-            "support": {
-                "source": "https://github.com/spatie/laravel-fractal/tree/6.4.0"
-            },
-            "funding": [
-                {
-                    "url": "https://spatie.be/open-source/support-us",
-                    "type": "custom"
-                }
-            ],
-            "time": "2026-02-21T15:58:07+00:00"
-        },
-        {
-            "name": "spatie/laravel-medialibrary",
-            "version": "11.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "a1823c02936d53ac441471cc57298e30d5908bbf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/a1823c02936d53ac441471cc57298e30d5908bbf",
-                "reference": "a1823c02936d53ac441471cc57298e30d5908bbf",
-                "shasum": ""
-            },
-            "require": {
-                "ext-exif": "*",
-                "ext-fileinfo": "*",
-                "ext-json": "*",
-                "illuminate/bus": "^10.0",
-                "illuminate/conditionable": "^10.0",
-                "illuminate/console": "^10.0",
-                "illuminate/database": "^10.0",
-                "illuminate/pipeline": "^10.0",
-                "illuminate/support": "^10.0",
-                "maennchen/zipstream-php": "^3.1",
-                "php": "^8.2",
-                "spatie/image": "^3.0",
-                "spatie/laravel-package-tools": "^1.16.1",
-                "spatie/temporary-directory": "^2.2",
-                "symfony/console": "^6.4.1|^7.0"
-            },
-            "conflict": {
-                "php-ffmpeg/php-ffmpeg": "<0.6.1"
-            },
-            "require-dev": {
-                "aws/aws-sdk-php": "^3.293.10",
-                "doctrine/dbal": "^2.13.9",
-                "ext-imagick": "*",
-                "ext-pdo_sqlite": "*",
-                "ext-zip": "*",
-                "guzzlehttp/guzzle": "^7.8.1",
-                "larastan/larastan": "^2.7",
-                "league/flysystem-aws-s3-v3": "^3.22",
-                "mockery/mockery": "^1.6.7",
-                "orchestra/testbench": "^7.0|^8.17",
-                "pestphp/pest": "^2.28",
-                "phpstan/extension-installer": "^1.3.1",
-                "spatie/laravel-ray": "^1.33",
-                "spatie/pdf-to-image": "^2.2",
-                "spatie/pest-plugin-snapshots": "^2.1"
-            },
-            "suggest": {
-                "league/flysystem-aws-s3-v3": "Required to use AWS S3 file storage",
-                "php-ffmpeg/php-ffmpeg": "Required for generating video thumbnails",
-                "spatie/pdf-to-image": "Required for generating thumbnails of PDFs and SVGs"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Spatie\\MediaLibrary\\MediaLibraryServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\MediaLibrary\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Associate files with Eloquent models",
-            "homepage": "https://github.com/spatie/laravel-medialibrary",
-            "keywords": [
-                "cms",
-                "conversion",
-                "downloads",
-                "images",
-                "laravel",
-                "laravel-medialibrary",
-                "media",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/laravel-medialibrary/issues",
-                "source": "https://github.com/spatie/laravel-medialibrary/tree/11.0.0"
-            },
-            "funding": [
-                {
-                    "url": "https://spatie.be/open-source/support-us",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-12-14T14:18:03+00:00"
-        },
-        {
             "name": "spatie/laravel-package-tools",
             "version": "1.93.0",
             "source": {
@@ -5747,145 +4693,6 @@
                 }
             ],
             "time": "2026-02-21T21:44:45+00:00"
-        },
-        {
-            "name": "spatie/temporary-directory",
-            "version": "2.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/temporary-directory.git",
-                "reference": "662e481d6ec07ef29fd05010433428851a42cd07"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/662e481d6ec07ef29fd05010433428851a42cd07",
-                "reference": "662e481d6ec07ef29fd05010433428851a42cd07",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\TemporaryDirectory\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alex Vanderbist",
-                    "email": "alex@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Easily create, use and destroy temporary directories",
-            "homepage": "https://github.com/spatie/temporary-directory",
-            "keywords": [
-                "php",
-                "spatie",
-                "temporary-directory"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/temporary-directory/issues",
-                "source": "https://github.com/spatie/temporary-directory/tree/2.3.1"
-            },
-            "funding": [
-                {
-                    "url": "https://spatie.be/open-source/support-us",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2026-01-12T07:42:22+00:00"
-        },
-        {
-            "name": "studio/laravel-totem",
-            "version": "v11.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/always-open/laravel-totem.git",
-                "reference": "837273b5a821106fbea743383265b71aac40fd82"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/always-open/laravel-totem/zipball/837273b5a821106fbea743383265b71aac40fd82",
-                "reference": "837273b5a821106fbea743383265b71aac40fd82",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/bus": "^10.0|^11.0|^12.0",
-                "illuminate/console": "^10.0|^11.0|^12.0",
-                "illuminate/contracts": "^10.0|^11.0|^12.0",
-                "illuminate/database": "^10.0|^11.0|^12.0",
-                "illuminate/events": "^10.0|^11.0|^12.0",
-                "illuminate/notifications": "^10.0|^11.0|^12.0",
-                "php": "^8.2.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^8.0|^9.0|^10.0",
-                "phpunit/phpunit": "^10.0|^11.0|^12.0"
-            },
-            "suggest": {
-                "nexmo/client": "Required for sms notifications."
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Studio\\Totem\\Providers\\TotemServiceProvider"
-                    ]
-                },
-                "component": "package"
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "Studio\\Totem\\": "src/",
-                    "Database\\Factories\\": "database/factories/",
-                    "Studio\\Totem\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Quentin Schmick",
-                    "email": "qschmick@gmail.com"
-                },
-                {
-                    "name": "Roshan Gautam",
-                    "email": "roshan.gautam@hotmail.com"
-                }
-            ],
-            "description": "A Laravel package to manage your cron jobs through a beautiful dashboard",
-            "keywords": [
-                "cron",
-                "laravel",
-                "manager",
-                "schedule",
-                "totem"
-            ],
-            "support": {
-                "issues": "https://github.com/always-open/laravel-totem/issues",
-                "source": "https://github.com/always-open/laravel-totem/tree/v11.1.0"
-            },
-            "time": "2025-07-10T15:42:03+00:00"
         },
         {
             "name": "symfony/console",
@@ -8501,73 +7308,6 @@
             "time": "2025-12-02T11:56:42+00:00"
         },
         {
-            "name": "turahe/laravel-counters",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/turahe/laravel-counters.git",
-                "reference": "de6743ebd8ffcc48ab2a09afe128007cd078ff0b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/turahe/laravel-counters/zipball/de6743ebd8ffcc48ab2a09afe128007cd078ff0b",
-                "reference": "de6743ebd8ffcc48ab2a09afe128007cd078ff0b",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^10.0 || ^11.0 || ^12.0",
-                "php": "^8.2"
-            },
-            "require-dev": {
-                "laravel/pint": "^1.17",
-                "orchestra/testbench": "^8.0 || ^9.0 || ^10.0",
-                "phpspec/phpspec": "^6.0 || ^7.0"
-            },
-            "type": "library",
-            "extra": {
-                "aliases": {
-                    "Counters": "Turahe\\Counters\\Facades\\Counters"
-                },
-                "laravel": {
-                    "providers": [
-                        "Turahe\\Counters\\CountersServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Turahe\\Counters\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nur Wachid",
-                    "email": "wachid@outlook.com",
-                    "homepage": "https://www.wach.id"
-                }
-            ],
-            "description": "management for counters in laravel system",
-            "homepage": "https://github.com/turahe/laravel-counters",
-            "keywords": [
-                "Decrement",
-                "counters",
-                "increment",
-                "laravel",
-                "number of visitors",
-                "turahe",
-                "visitors"
-            ],
-            "support": {
-                "issues": "https://github.com/turahe/laravel-counters/issues",
-                "source": "https://github.com/turahe/laravel-counters/tree/v1.1.0"
-            },
-            "time": "2025-03-02T16:03:27+00:00"
-        },
-        {
             "name": "vlucas/phpdotenv",
             "version": "v5.6.3",
             "source": {
@@ -8724,189 +7464,6 @@
                 }
             ],
             "time": "2026-04-26T05:33:54+00:00"
-        },
-        {
-            "name": "waltersilvacruz/laravel-shortcodes",
-            "version": "v1.0.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/waltersilvacruz/laravel-shortcodes.git",
-                "reference": "add611623988a95f0a6cd68cc8f555b8bbae12ce"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/waltersilvacruz/laravel-shortcodes/zipball/add611623988a95f0a6cd68cc8f555b8bbae12ce",
-                "reference": "add611623988a95f0a6cd68cc8f555b8bbae12ce",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "5.6.x|5.7.x|5.8.x|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
-                "illuminate/support": "5.6.x|5.7.x|5.8.x|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
-                "illuminate/view": "5.6.x|5.7.x|5.8.x|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
-                "php": "^7.2|^8.0|^8.1|^8.2|^8.3"
-            },
-            "require-dev": {
-                "orchestra/testbench": "~3.8.0",
-                "phpunit/phpunit": "^7.5|^8.0",
-                "scrutinizer/ocular": "^1.5",
-                "squizlabs/php_codesniffer": "~2.3"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Shortcode": "Webwizo\\Shortcodes\\Facades\\Shortcode"
-                    },
-                    "providers": [
-                        "Webwizo\\Shortcodes\\ShortcodesServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Webwizo\\Shortcodes\\": "src"
-                },
-                "classmap": [
-                    "tests/TestCase.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Asif Iqbal",
-                    "email": "webwizo@gmail.com",
-                    "homepage": "http://www.webwizo.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Wordpress like shortcodes for Laravel 5, 6, 7, 8, 9, 10 and 11 (fork of webwizo/laravel-shortcodes)",
-            "homepage": "https://github.com/waltersilvacruz/laravel-shortcodes",
-            "keywords": [
-                "laravel",
-                "shortcodes",
-                "wordpress"
-            ],
-            "support": {
-                "source": "https://github.com/waltersilvacruz/laravel-shortcodes/tree/v1.0.22"
-            },
-            "time": "2024-08-21T14:25:35+00:00"
-        },
-        {
-            "name": "webpatser/laravel-countries",
-            "version": "1.5.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webpatser/laravel-countries.git",
-                "reference": "000d7aaa67a1eb488275feafe6ab74a6b7544e84"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webpatser/laravel-countries/zipball/000d7aaa67a1eb488275feafe6ab74a6b7544e84",
-                "reference": "000d7aaa67a1eb488275feafe6ab74a6b7544e84",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Webpatser\\Countries": "src/"
-                },
-                "classmap": [
-                    "src/commands"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christoph Kempen",
-                    "email": "christoph@downsized.nl",
-                    "homepage": "http://downsized.nl/",
-                    "role": "developer"
-                },
-                {
-                    "name": "Paul Kievits",
-                    "role": "developer"
-                }
-            ],
-            "description": "Laravel Countries is a bundle for Laravel, providing Almost ISO 3166_2, 3166_3, currency, Capital and more for all countries.",
-            "homepage": "https://github.com/webpatser/laravel-countries",
-            "keywords": [
-                "countries",
-                "iso_3166_2",
-                "iso_3166_3",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/webpatser/laravel-countries/issues",
-                "source": "https://github.com/webpatser/laravel-countries"
-            },
-            "time": "2018-05-16T06:37:24+00:00"
-        },
-        {
-            "name": "webpatser/laravel-uuid",
-            "version": "4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webpatser/laravel-uuid.git",
-                "reference": "f82715c6bc6a4fcc61bb020cb4fddeb8cc73bbea"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webpatser/laravel-uuid/zipball/f82715c6bc6a4fcc61bb020cb4fddeb8cc73bbea",
-                "reference": "f82715c6bc6a4fcc61bb020cb4fddeb8cc73bbea",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0|^8.0"
-            },
-            "require-dev": {
-                "fakerphp/faker": "^1.9.1",
-                "phpunit/phpunit": "^9.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Uuid": "Webpatser\\Uuid\\Uuid"
-                    },
-                    "providers": [
-                        "Webpatser\\Uuid\\UuidServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Webpatser\\Uuid\\": "src/Webpatser/Uuid/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christoph Kempen",
-                    "email": "christoph@downsized.nl"
-                }
-            ],
-            "description": "Laravel package to generate and to validate a universally unique identifier (UUID) according to the RFC 4122 standard. Support for version 1, 3, 4 and 5 UUIDs are built-in.",
-            "homepage": "https://github.com/webpatser/laravel-uuid",
-            "keywords": [
-                "UUID RFC4122"
-            ],
-            "support": {
-                "issues": "https://github.com/webpatser/laravel-uuid/issues",
-                "source": "https://github.com/webpatser/laravel-uuid"
-            },
-            "time": "2023-05-19T08:56:59+00:00"
         }
     ],
     "packages-dev": [
@@ -11226,16 +9783,16 @@
         },
         {
             "name": "spatie/flare-client-php",
-            "version": "1.11.0",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/flare-client-php.git",
-                "reference": "fb3ffb946675dba811fbde9122224db2f84daca9"
+                "reference": "53f41b08a27cc039e1a8ed2be9a202e924f31bad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/fb3ffb946675dba811fbde9122224db2f84daca9",
-                "reference": "fb3ffb946675dba811fbde9122224db2f84daca9",
+                "url": "https://api.github.com/repos/spatie/flare-client-php/zipball/53f41b08a27cc039e1a8ed2be9a202e924f31bad",
+                "reference": "53f41b08a27cc039e1a8ed2be9a202e924f31bad",
                 "shasum": ""
             },
             "require": {
@@ -11283,7 +9840,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/flare-client-php/issues",
-                "source": "https://github.com/spatie/flare-client-php/tree/1.11.0"
+                "source": "https://github.com/spatie/flare-client-php/tree/1.11.1"
             },
             "funding": [
                 {
@@ -11291,7 +9848,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-17T08:06:16+00:00"
+            "time": "2026-05-15T09:31:32+00:00"
         },
         {
             "name": "spatie/ignition",

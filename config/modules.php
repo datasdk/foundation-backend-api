@@ -175,8 +175,8 @@ return [
     'composer' => [
         'vendor' => 'nwidart',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'Kasper L. Kristiansen',
+            'email' => 'info@datas.dk',
         ],
         'composer-output' => false,
     ],
