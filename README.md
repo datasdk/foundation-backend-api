@@ -5,8 +5,8 @@
 Clone repositoryet:
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/datasdk/foundation-backend-api
+cd foundation-backend-api
 ```
 
 Installer PHP dependencies:
