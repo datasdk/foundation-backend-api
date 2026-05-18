@@ -35,18 +35,12 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerCoreModuleResources();
-        $this->registerObservers(); // Register the observers for models
+  
         $this->viteConfig();
 
-       // $this->registerCustomValidators(); // Register custom validation rules if necessary
-        Paginator::useBootstrap(); // Use Bootstrap for pagination styling
+ 
 
-        /*
-        require app_path('Helpers/ConfigHelper.php');
-        require app_path('Helpers/CustomHeaders.php');
-        require app_path('Helpers/UserHelper.php');
-        require app_path('Helpers/NavigationHelper.php');
-   */
+     
 
     }
 
@@ -64,9 +58,9 @@ class AppServiceProvider extends ServiceProvider
         $this->checkDBConnection(); // Check if the database connection is working
         $this->setTimezone(); // Set the application's timezone
         $this->setSettings(); // Set application-specific settings from the database
-        $this->registerRules();
+   
        // $this->setLanguage();
-        $this->addWidgets();
+
 
 
     }
@@ -164,18 +158,7 @@ class AppServiceProvider extends ServiceProvider
         return Config::set("public.locales",config("app.locales"));
 
     }
-    /**
-     * Register model observers.
-     *
-     * This method is used for registering any observers for models.
-     */
-    protected function registerObservers()
-    {
-        
-       // User::observe(UserObserver::class);
-
-
-    }
+ 
 
 
     protected function registerCoreModuleResources(): void
@@ -197,26 +180,6 @@ class AppServiceProvider extends ServiceProvider
 
     }
     
-    
-    protected function registerRules(){
-    
-    /*
-        RuleHelper::registerModels([
-            \DataSDK\Categories\Models\Categories::class
-        ]);
-    */
-
-    }
-    
-    protected function addWidgets(){
-
-        Widget::group('dashboard')->position(1)->addWidget('dashboard_hello');
-        
-        Widget::group('dashboard')->position(2)->addWidget('dashboard_users');
-
-        Widget::group('dashboard')->position(3)->addWidget('dashboard_logs');
-
-        
-    }
+   
 
 }
