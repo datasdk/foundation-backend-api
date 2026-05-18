@@ -1,3 +1,28 @@
+# Datas CMS
+
+## Installation
+
+Clone repositoryet:
+
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
+
+Installer PHP dependencies:
+
+```bash
+composer install
+```
+
+Kør derefter Datas installationen:
+
+```bash
+php artisan datas:install
+```
+
+Når installationen er færdig, er projektet klar til konfiguration og brug.
+
 # Datas Module
 
 This repository contains a module used within the Datas ecosystem.
