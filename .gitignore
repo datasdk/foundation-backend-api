@@ -6,6 +6,7 @@
 /storage/*.key
 /vendor
 /composer.lock
+/modules_statuses.json
 .env
 .env.backup
 .env.production
