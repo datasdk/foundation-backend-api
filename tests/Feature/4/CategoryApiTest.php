@@ -2,7 +2,7 @@
 
 use Tests\TestCase;
 use App\Models\User;
-use DataSDK\Categories\Models\Categories;
+use App\Models\Categories;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class CategoryApiTest extends TestCase

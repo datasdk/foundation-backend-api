@@ -2,18 +2,22 @@
 
 namespace App\Contracts\Abstracts;
 
+
 use App\Contracts\Interfaces\ActionModelInterface;
 use App\Http\Scopes\OrionScopes;
 use App\Observers\ActionModelObserver;
-use DataSDK\Available\Traits\Available;
-use DataSDK\Categories\Traits\Categories;
-use DataSDK\Tools\Traits\DateFormat;
-use DataSDK\Tools\Traits\Language;
-use DataSDK\Tools\Traits\Roles;
-use DataSDK\Tools\Traits\Slugs\TranslatableSlug;
-use DataSDK\Tools\Traits\Sorting;
+
+use App\Traits\Available\Available;
+use App\Traits\Categories\Categories;
+use App\Traits\DateFormat\DateFormat;
+use App\Traits\Language\Language;
+use App\Traits\Roles\Roles;
+use App\Traits\Slugs\TranslatableSlug;
+use App\Traits\Sorting\Sorting;
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+
 
 abstract class ActionModel extends Model implements ActionModelInterface
 {

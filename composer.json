@@ -9,7 +9,7 @@
         "dompdf/dompdf": "3.1",
         "guzzlehttp/guzzle": "^7.2",
         "joshbrw/laravel-module-installer": "*",
-
+        "kalnoy/nestedset": "v6.0.7",
         "laraeast/laravel-settings": "^2.0",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
@@ -17,7 +17,6 @@
         "opcodesio/log-viewer": "^3.21",
         "psr/log": "3.0",
         "spatie/eloquent-sortable": "*",
-  
         "spatie/laravel-permission": "6.0",
         "spatie/laravel-sluggable": "3.8.1",
         "spatie/laravel-tags": "^4.11",

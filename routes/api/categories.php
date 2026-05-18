@@ -1,6 +1,6 @@
 <?php
 
-use DataSDK\Categories\Http\Controllers\Api\CategoriesController;
+use App\Http\Controllers\Api\CategoriesController;
 use Illuminate\Support\Facades\Route;
 use Orion\Facades\Orion;
 

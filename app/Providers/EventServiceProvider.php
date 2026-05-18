@@ -25,10 +25,6 @@ class EventServiceProvider extends ServiceProvider
       
         ],
 
-        \Modules\Crm\Events\Auth\UserAfterAuthenticated::class => [
-            \Modules\Crm\Listeners\Auth\SetUserHeaders::class
-        ],
-
         // ActionModel Creating Event
         \App\Events\ActionsModels\ModelCreating::class => [
  
@@ -36,14 +32,12 @@ class EventServiceProvider extends ServiceProvider
 
         // ActionModel Created Event
         \App\Events\ActionsModels\ModelCreated::class => [
-            \DataSDK\Addresses\Listeners\ActionsModels\Addresses\HandleAddressesCreated::class,
-            \DataSDK\Addresses\Listeners\ActionsModels\Contacts\HandleContactsCreated::class,
+
         ],
 
         // ActionModel Updated Event
         \App\Events\ActionsModels\ModelUpdated::class => [
-            \DataSDK\Addresses\Listeners\ActionsModels\Addresses\HandleAddressesUpdated::class,
-            \DataSDK\Addresses\Listeners\ActionsModels\Contacts\HandleContactsUpdated::class,
+     
         ],
     ];
 

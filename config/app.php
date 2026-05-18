@@ -272,10 +272,7 @@ return [
 
         'Markdown' => Illuminate\Mail\Markdown::class,
         'Shortcode' => Webwizo\Shortcodes\Facades\Shortcode::class,
-  
-
-        'Category' =>  DataSDK\Categories\Models\Categories::class,
-        
+          
         'HasRoles' => Spatie\Permission\Traits\HasRoles::class,
      
         'ActionModel' => App\Contracts\Abstracts\ActionModel::class,

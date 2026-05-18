@@ -9,13 +9,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use App\Models\User;
-use Modules\Email\Services\ForgotPasswordService;
-use Modules\Email\Services\VerificationService;
-use Modules\Email\Services\InviteService;
 use Illuminate\Support\Facades\Validator;
-use Modules\Crm\Events\Auth\BeforeLoginAttempt;
-use Modules\Crm\Events\Auth\UserLoginSuccess;
-use Modules\Crm\Events\Auth\UserLoggedIn;
 use Exception;
 
 
@@ -28,7 +22,9 @@ class AuthController extends Controller
     public function login(Request $req)
     {
 
-        event(new BeforeLoginAttempt($req->only('email')));
+        if (class_exists(\Modules\Crm\Events\Auth\BeforeLoginAttempt::class)) {
+            event(new \Modules\Crm\Events\Auth\BeforeLoginAttempt($req->only('email')));
+        }
 
 
         $validator = Validator::make($req->all(), [
@@ -62,7 +58,9 @@ class AuthController extends Controller
 
         
         // --- Efter succesfuld validering ---
-        event(new UserLoginSuccess($user));
+        if (class_exists(\Modules\Crm\Events\Auth\UserLoginSuccess::class)) {
+            event(new \Modules\Crm\Events\Auth\UserLoginSuccess($user));
+        }
 
 
         $remember = $req->boolean('remember', true);
@@ -76,7 +74,9 @@ class AuthController extends Controller
 
 
         // --- Efter alt er færdigt ---
-        event(new UserLoggedIn($user, $token));
+        if (class_exists(\Modules\Crm\Events\Auth\UserLoggedIn::class)) {
+            event(new \Modules\Crm\Events\Auth\UserLoggedIn($user, $token));
+        }
 
 
         if ($req->filled('include')) {
@@ -163,14 +163,14 @@ class AuthController extends Controller
         );
 
 
-        $service = app(ForgotPasswordService::class);
-
-        $service->send([
-            'first_name' => $user->first_name,
-            'email' => $user->email,
-            'token' => $token,
-            'redirect' => $redirect,
-        ]);
+        if (class_exists(\Modules\Email\Services\ForgotPasswordService::class)) {
+            app(\Modules\Email\Services\ForgotPasswordService::class)->send([
+                'first_name' => $user->first_name,
+                'email' => $user->email,
+                'token' => $token,
+                'redirect' => $redirect,
+            ]);
+        }
 
 
         return response()->json(['message' => trans('auth.password_reset_email_sent')]);
@@ -228,7 +228,9 @@ class AuthController extends Controller
         if (!$user) return response()->json(['error' => trans('auth.user_not_exists')], 404);
 
 
-        $sent = app(VerificationService::class)->send($user);
+        $sent = class_exists(\Modules\Email\Services\VerificationService::class)
+            ? app(\Modules\Email\Services\VerificationService::class)->send($user)
+            : false;
 
         return response()->json([
             'message' => trans('auth.activation_email_sent'),
@@ -254,7 +256,9 @@ class AuthController extends Controller
         if (!$user) return response()->json(['error' => trans('auth.user_not_exists')], 404);
 
 
-        app(InviteService::class)->send($user);
+        if (class_exists(\Modules\Email\Services\InviteService::class)) {
+            app(\Modules\Email\Services\InviteService::class)->send($user);
+        }
         
         return response()->json(['message' => trans('auth.invitation_email_sent')], 200);
 

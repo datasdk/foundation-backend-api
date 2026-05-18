@@ -6,8 +6,7 @@ use App\Models\Team;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
-use DataSDK\Addresses\Models\Address;
-use DataSDK\Addresses\Models\Contact;
+
 
 class UserFactory extends Factory
 {
@@ -43,22 +42,5 @@ class UserFactory extends Factory
 
     }
 
-    public function configure()
-    {
-
-        return $this->afterCreating(function (User $user) {
-
-            Address::factory()->create([
-                'addressable_type' => User::class,
-                'addressable_id' => $user->id,
-            ]);
-
-            Contact::factory()->create([
-                'contactable_type' => User::class,
-                'contactable_id' => $user->id,
-            ]);
-
-        });
-
-    }
+    
 }

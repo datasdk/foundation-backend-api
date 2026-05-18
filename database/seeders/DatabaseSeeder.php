@@ -6,8 +6,6 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
 use Nwidart\Modules\Facades\Module;
 
-use DataSDK\Addresses\Database\Seeders\CountrySeeder;
-use Modules\Email\Database\Seeders\EmailTemplateSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,10 +18,7 @@ class DatabaseSeeder extends Seeder
     {
         
         $this->call([
-            RoleSeeder::class,
-            CountrySeeder::class,
-            EmailTemplateSeeder::class,
-         
+            RoleSeeder::class,         
             ModuleSeeder::class,    
         ]);
  

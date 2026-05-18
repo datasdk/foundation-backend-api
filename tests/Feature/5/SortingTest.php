@@ -4,7 +4,7 @@ namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
-use DataSDK\Categories\Models\Categories;
+use App\Models\Categories;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
