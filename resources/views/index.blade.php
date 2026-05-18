@@ -330,29 +330,7 @@ $logoData = file_exists($logoPath) ? base64_encode(file_get_contents($logoPath))
             </div>
         </section>
 
-        <aside class="developer-panel" aria-label="Developer preview">
-            <div class="panel-top">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-
-            <div class="panel-body">
-                @if ($logoData)
-                    <img class="logo-mark" src="data:image/png;base64,{{ $logoData }}" alt="Datas logo">
-                @endif
-
-                <code>
-                    <span>$</span> composer require datasdk/categories<br>
-                    <span>$</span> php artisan module:enable Email<br>
-                    <span>$</span> curl https://datas.dk/developer
-                </code>
-
-                <p class="doc-note">
-                    Find guides, API references, and module documentation at datas.dk/developer.
-                </p>
-            </div>
-        </aside>
+        
     </main>
 
     <footer>
